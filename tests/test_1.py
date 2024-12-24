@@ -1,7 +1,8 @@
 from lib.algorithms import sum, multiply
 
-def test_sum():
-    assert sum(1, 2) == 3
+async def test_sum():
+    assert await sum(1, 2) == 3
 
-def test_multiply():
-    assert multiply(1, 2) == 2
+
+async def test_multiply():
+    assert await multiply(1, 2) == 2
